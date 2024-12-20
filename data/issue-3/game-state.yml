@@ -1,12 +1,16 @@
-previousFen: rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1
+previousFen: rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2
 mainThread: 2556622416
 processedComments:
   - 2556622416
   - 2556626767
+  - 2556630976
 moves:
   - from: e2
     to: e4
     playedBy: rudra-bm
+  - from: e7
+    to: e5
+    playedBy: rudra-iitm
 players:
   white: rudra-bm
-  black: NotAssigned
+  black: rudra-iitm
