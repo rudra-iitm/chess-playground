@@ -1,0 +1,25 @@
+name: Play Chess Workflow
+
+on:
+  issues:
+    types:
+      - opened
+      - closed
+  issue_comment:
+    types:
+      - created
+
+jobs:
+  play-chess:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Use Play Chess Action
+        uses: rudra-iitm/chess-actions@main
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
